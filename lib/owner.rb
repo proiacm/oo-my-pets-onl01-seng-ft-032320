@@ -51,8 +51,8 @@ class Owner
   def sell_pets
     Dog.all.select {|i| i.mood = "nervous"}
     Cat.all.select {|i| i.mood = "nervous"}
-    Dog.all.each {|x| x.owner = nil}
-    Cat.all.each {|x| x.owner = nil}
+    Dog.all.each {|x| x.owner = nil} # I have no idea what I'm doing
+    Cat.all.each {|x| x.owner = nil} # Test... must... pass... 
   end 
   
   def list_pets
